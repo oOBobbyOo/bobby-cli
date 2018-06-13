@@ -37,7 +37,6 @@ program.version('1.0.0', '-v, --version')
       ]).then((answers) => {
         // logger.info(answers)
         const url = 'https://github.com:username/templates-repo.git';
-        const url2 = 'https://github.com/oOBobbyOo/restful-api.git';
 
         let bar = new ProgressBar('  downloading [:bar] :rate/bps :percent :etas', {
           complete: '=',
@@ -49,7 +48,7 @@ program.version('1.0.0', '-v, --version')
         const spinner = ora('正在下载模板...');
         spinner.start();
 
-        clone(url2, name, null, (err) => {
+        clone(url, name, null, (err) => {
           if (err) {
             spinner.fail();
             console.log(symbols.error, chalk.red(err));
