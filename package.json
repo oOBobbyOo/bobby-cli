@@ -1,0 +1,29 @@
+{
+  "name": "bobby-cli",
+  "version": "1.0.0",
+  "description": "基于node.js的脚手架工具",
+  "main": "index.js",
+  "bin": {
+    "bobby": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "bobby",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "download-git-repo": "^1.0.2",
+    "fs": "0.0.1-security",
+    "git-clone": "^0.1.0",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.0.0",
+    "log-symbols": "^2.2.0",
+    "ora": "^2.1.0",
+    "progress": "^2.0.0",
+    "shelljs": "^0.8.2",
+    "tracer": "^0.9.0"
+  }
+}
